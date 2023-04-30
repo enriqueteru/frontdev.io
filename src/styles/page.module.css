@@ -1,0 +1,17 @@
+.html{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background);
+  color: var(--font-color);
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  min-height: 100vh;
+  font-family: var(--font-main);
+}

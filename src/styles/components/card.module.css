@@ -1,0 +1,48 @@
+.cards__wrapper {
+  font-family: var(--font-main);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  width: calc(100% / 3 - 20px); /* Set a fixed width for each column */
+  height: 300px;
+  margin: 10px; /* Add some margin between columns */
+  flex-basis: calc(
+    100% / 3 - 20px
+  ); /* Ensure each column takes up exactly one third of the available space */
+}
+
+.card:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+}
+
+.card:hover > .card__img{
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  height: 100%;
+
+}
+
+.card__img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  height: 50%;
+  object-fit: cover;
+}
